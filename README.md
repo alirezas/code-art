@@ -1,10 +1,10 @@
 # code-art
 My generative art playground.
 
-## Joy-division
+## Joy Division
 <img src="001 - joy-division/demo.png" width="200">
 
-## Cubic-disarray
+## Cubic Disarray
 <img src="002 - cubic-disarray/demo.png" width="200">
 
 ## Circle Packing
