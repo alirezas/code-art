@@ -30,3 +30,6 @@ My generative art playground.
 
 ## Maze Solver
 <img src="010 - maze-solver/demo.png" width="200">
+
+## Random Grid
+<img src="011 - random-grid/demo.png" width="200">
