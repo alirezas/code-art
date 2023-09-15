@@ -1,12 +1,12 @@
-const canvasSketch = require('canvas-sketch')
-const random = require('canvas-sketch-util/random')
+const canvasSketch = require("canvas-sketch")
+const random = require("canvas-sketch-util/random")
 
 let seed = random.getRandomSeed()
 
 const settings = {
   dimensions: [600, 600],
   animate: true,
-  name: seed
+  name: seed,
 }
 
 const sketch = ({ width, height }) => {
@@ -19,16 +19,16 @@ const sketch = ({ width, height }) => {
     particles.push({ x: random.range(0, width), y: random.range(0, height) })
   }
 
-  window.addEventListener('click', () => {
+  window.addEventListener("click", () => {
     seed = random.getRandomSeed()
     random.setSeed(seed)
   })
 
   return ({ context, width, height }) => {
-    context.fillStyle = 'rgba(0,0,0,0.08)'
+    context.fillStyle = "rgba(0,0,0,0.08)"
     context.fillRect(0, 0, width, height)
 
-    context.fillStyle = 'white'
+    context.fillStyle = "white"
     particles.forEach((p) => {
       drawPoint({ context, x: p.x, y: p.y })
       const noise = random.noise2D(p.x * noiseScale, p.y * noiseScale)
